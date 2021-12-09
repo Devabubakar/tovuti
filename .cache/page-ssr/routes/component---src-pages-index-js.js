@@ -913,7 +913,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_3649515864_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/3649515864.json */ "./public/page-data/sq/d/3649515864.json");
+/* harmony import */ var _public_page_data_sq_d_2326376460_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/2326376460.json */ "./public/page-data/sq/d/2326376460.json");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
@@ -937,9 +937,9 @@ __webpack_require__.r(__webpack_exports__);
 const Layout = ({
   children
 }) => {
-  var _data$site$siteMetada;
+  var _data$site$siteMetada, _data$site$siteMetada2;
 
-  const data = _public_page_data_sq_d_3649515864_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const data = _public_page_data_sq_d_2326376460_json__WEBPACK_IMPORTED_MODULE_0__.data;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_header__WEBPACK_IMPORTED_MODULE_3__["default"], {
     siteTitle: ((_data$site$siteMetada = data.site.siteMetadata) === null || _data$site$siteMetada === void 0 ? void 0 : _data$site$siteMetada.title) || `Title`
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
@@ -953,8 +953,8 @@ const Layout = ({
       marginTop: `2rem`
     }
   }, "\xA9 ", new Date().getFullYear(), ", Built with", ` `, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
-    href: "https://www.gatsbyjs.com"
-  }, "Gatsby"))));
+    href: "https://www.github.com/Devabubakar"
+  }, (_data$site$siteMetada2 = data.site.siteMetadata) === null || _data$site$siteMetada2 === void 0 ? void 0 : _data$site$siteMetada2.author))));
 };
 
 Layout.propTypes = {
@@ -1084,7 +1084,7 @@ const IndexPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createEl
   src: "../images/gatsby-astronaut.png",
   width: 300,
   quality: 95,
-  formats: ["auto", "webp", "avif"],
+  formats: ['auto', 'webp', 'avif'],
   alt: "A Gatsby astronaut",
   style: {
     marginBottom: `1.45rem`
@@ -1098,7 +1098,9 @@ const IndexPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createEl
   to: "/using-ssr"
 }, "Go to \"Using SSR\""), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
   to: "/using-dsg"
-}, "Go to \"Using DSG\"")));
+}, "Go to \"Using DSG\""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  to: "/test"
+}, " Go To the test Page")));
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexPage);
 
@@ -1125,14 +1127,14 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f8f8f8"
 
 /***/ }),
 
-/***/ "./public/page-data/sq/d/3649515864.json":
+/***/ "./public/page-data/sq/d/2326376460.json":
 /*!***********************************************!*\
-  !*** ./public/page-data/sq/d/3649515864.json ***!
+  !*** ./public/page-data/sq/d/2326376460.json ***!
   \***********************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Gatsby Default Starter"}}}}');
+module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Simple Blog","author":"@🚀AbubakarAli"}}}}');
 
 /***/ }),
 
@@ -1143,7 +1145,7 @@ module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Gatsby De
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Gatsby Default Starter","description":"Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.","author":"@🚀AbubakarAli"}}}}');
+module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Simple Blog","description":"Simple Blog Built","author":"@🚀AbubakarAli"}}}}');
 
 /***/ })
 

@@ -8,6 +8,7 @@ exports.components = {
   "component---src-pages-404-js": preferDefault(require("/Users/abubakar/projects/frontend/gatsby-blog/src/pages/404.js")),
   "component---src-pages-index-js": preferDefault(require("/Users/abubakar/projects/frontend/gatsby-blog/src/pages/index.js")),
   "component---src-pages-page-2-js": preferDefault(require("/Users/abubakar/projects/frontend/gatsby-blog/src/pages/page-2.js")),
+  "component---src-pages-test-js": preferDefault(require("/Users/abubakar/projects/frontend/gatsby-blog/src/pages/test.js")),
   "component---src-pages-using-ssr-js": preferDefault(require("/Users/abubakar/projects/frontend/gatsby-blog/src/pages/using-ssr.js")),
   "component---src-pages-using-typescript-tsx": preferDefault(require("/Users/abubakar/projects/frontend/gatsby-blog/src/pages/using-typescript.tsx")),
   "component---src-templates-using-dsg-js": preferDefault(require("/Users/abubakar/projects/frontend/gatsby-blog/src/templates/using-dsg.js"))
