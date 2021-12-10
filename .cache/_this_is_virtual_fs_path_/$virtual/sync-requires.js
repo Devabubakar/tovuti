@@ -11,6 +11,6 @@ exports.components = {
   "component---src-pages-test-js": preferDefault(require("/Users/abubakar/projects/frontend/gatsby-blog/src/pages/test.js")),
   "component---src-pages-using-ssr-js": preferDefault(require("/Users/abubakar/projects/frontend/gatsby-blog/src/pages/using-ssr.js")),
   "component---src-pages-using-typescript-tsx": preferDefault(require("/Users/abubakar/projects/frontend/gatsby-blog/src/pages/using-typescript.tsx")),
-  "component---src-templates-using-dsg-js": preferDefault(require("/Users/abubakar/projects/frontend/gatsby-blog/src/templates/using-dsg.js"))
+  "component---src-templates-blogs-js": preferDefault(require("/Users/abubakar/projects/frontend/gatsby-blog/src/templates/blogs.js"))
 }
 

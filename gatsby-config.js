@@ -15,7 +15,6 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
-    
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -23,10 +22,12 @@ module.exports = {
         name: `blogs`,
         path: `${__dirname}/src/blogs`,
       },
-    
     },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

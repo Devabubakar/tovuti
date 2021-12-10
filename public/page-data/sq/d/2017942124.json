@@ -1,0 +1,1 @@
+{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Test Blog","date":"2022-11-28"},"html":"<h4>Heading</h4>\n<h2>testing heading</h2>\n<p>This is a test mdn configuration</p>"}}]}}}
