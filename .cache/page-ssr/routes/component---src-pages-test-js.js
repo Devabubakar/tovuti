@@ -221,7 +221,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_962566616_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/962566616.json */ "./public/page-data/sq/d/962566616.json");
+/* harmony import */ var _public_page_data_sq_d_2709341400_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/2709341400.json */ "./public/page-data/sq/d/2709341400.json");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
@@ -236,7 +236,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Test = () => {
-  const data = _public_page_data_sq_d_962566616_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const data = _public_page_data_sq_d_2709341400_json__WEBPACK_IMPORTED_MODULE_0__.data;
   const BlogLink = (0,styled_components__WEBPACK_IMPORTED_MODULE_5__["default"])(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link).withConfig({
     displayName: "test__BlogLink"
   })(["color:blue;"]);
@@ -284,6 +284,17 @@ module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Simple Bl
 
 /***/ }),
 
+/***/ "./public/page-data/sq/d/2709341400.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/2709341400.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"totalCount":2,"edges":[{"node":{"frontmatter":{"title":"second Blog","date":"2020 - 02 -12"},"html":"<h3>Testing</h3>\\n<p>Bismillahi Rahmani Rahim</p>\\n<h2>Inshallah</h2>\\n<p>ALlah is the Best</p>","excerpt":"Testing Bismillahi Rahmani Rahim Inshallah ALlah is the Best","id":"736f62b4-a80d-5c99-bb1d-0c8f6c65e870","fields":{"slug":"/secondpost/"}}},{"node":{"frontmatter":{"title":"Netflix Clone ","date":"2021-11-20"},"html":"<h2>Table of contents</h2>\\n<ul>\\n<li><a href=\\"#overview\\">Overview</a>\\n<ul>\\n<li><a href=\\"#screenshot\\">Screenshot</a></li>\\n<li><a href=\\"#links\\">Links</a></li>\\n<li><a href=\\"#built-with\\">Built with</a></li>\\n<li><a href=\\"#what-i-learned\\">What I learned</a></li>\\n<li><a href=\\"#useful-resources\\">Useful resources</a></li>\\n</ul>\\n</li>\\n<li><a href=\\"#author\\">Author</a></li>\\n<li><a href=\\"#acknowledgments\\">Acknowledgments</a></li>\\n</ul>\\n<h2>Overview</h2>\\n<p>Mobile responsive Netflix clone built with ReactJS, styled - component,react router , firebase and context api for state management 🚀</p>\\n<h3>Screenshot</h3>\\n<h3>Links</h3>\\n<ul>\\n<li>Live Site: <a href=\\"https://netflix-live-clone.herokuapp.com/\\">Heroku</a></li>\\n</ul>\\n<h3>Built with</h3>\\n<ul>\\n<li>React Js</li>\\n<li>Styled Component</li>\\n</ul>\\n<h3>What I learned</h3>\\n<pre><code class=\\"language-js\\">//custom hook for firebase auth\\n//wrapper provider component\\nconst AuthProvider = ({ children }) => {\\n  const auth = useProvideAuth();\\n  return &#x3C;AuthContext.Provider value={auth}>{children}&#x3C;/AuthContext.Provider>;\\n};\\n</code></pre>\\n<h3>Useful resources</h3>\\n<ul>\\n<li><a href=\\"https://beta.reactjs.org/\\">React docs</a> - The react js docs is very intuitive and easy to follow along</li>\\n</ul>\\n<h2>Author</h2>\\n<ul>\\n<li>\\n<p>Website - <a href=\\"https://www.github.com/Devabubakar\\">Abubakar Ali</a></p>\\n</li>\\n<li>\\n<p>Twitter - <a href=\\"https://www.twitter.com/Devabubakar\\">Devabubakar</a></p>\\n</li>\\n</ul>\\n<h2>Acknowledgments</h2>\\n<ul>\\n<li>ps;; I forgot how to align a div inside a div - got help from stackoverflow</li>\\n</ul>","excerpt":"Table of contents Overview Screenshot Links Built with What I learned Useful resources Author Acknowledgments Overview Mobile responsive…","id":"ad262c50-b647-5b16-ade8-f8e7af0106e6","fields":{"slug":"/firstpost/"}}}]}}}');
+
+/***/ }),
+
 /***/ "./public/page-data/sq/d/63159454.json":
 /*!*********************************************!*\
   !*** ./public/page-data/sq/d/63159454.json ***!
@@ -292,17 +303,6 @@ module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Simple Bl
 
 "use strict";
 module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Simple Blog","description":"Simple Blog Built","author":"@🚀AbubakarAli"}}}}');
-
-/***/ }),
-
-/***/ "./public/page-data/sq/d/962566616.json":
-/*!**********************************************!*\
-  !*** ./public/page-data/sq/d/962566616.json ***!
-  \**********************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"data":{"allMarkdownRemark":{"totalCount":2,"edges":[{"node":{"frontmatter":{"title":"Netflix Clone ","date":"2021-11-20"},"html":"<h1>Netflix Clone</h1>\\n<h2>Table of contents</h2>\\n<ul>\\n<li><a href=\\"#overview\\">Overview</a>\\n<ul>\\n<li><a href=\\"#screenshot\\">Screenshot</a></li>\\n<li><a href=\\"#links\\">Links</a></li>\\n<li><a href=\\"#built-with\\">Built with</a></li>\\n<li><a href=\\"#what-i-learned\\">What I learned</a></li>\\n<li><a href=\\"#useful-resources\\">Useful resources</a></li>\\n</ul>\\n</li>\\n<li><a href=\\"#author\\">Author</a></li>\\n<li><a href=\\"#acknowledgments\\">Acknowledgments</a></li>\\n</ul>\\n<h2>Overview</h2>\\n<p>Mobile responsive Netflix clone built with ReactJS, styled - component,react router , firebase and context api for state management 🚀</p>\\n<h3>Screenshot</h3>\\n<h2>Desktop</h2>\\n<p><img src=\\"./src/assets/desktop.png\\" alt=\\"\\"></p>\\n<h2>Mobile</h2>\\n<p><img src=\\"./src/assets/mobile.png\\" alt=\\"\\"></p>\\n<h3>Links</h3>\\n<ul>\\n<li>Live Site: <a href=\\"https://netflix-live-clone.herokuapp.com/\\">Heroku</a></li>\\n</ul>\\n<h3>Built with</h3>\\n<ul>\\n<li>React Js</li>\\n<li>Styled Component</li>\\n</ul>\\n<h3>What I learned</h3>\\n<pre><code class=\\"language-js\\">//custom hook for firebase auth\\n//wrapper provider component\\nconst AuthProvider = ({ children }) => {\\n  const auth = useProvideAuth();\\n  return &#x3C;AuthContext.Provider value={auth}>{children}&#x3C;/AuthContext.Provider>;\\n};\\n</code></pre>\\n<h3>Useful resources</h3>\\n<ul>\\n<li><a href=\\"https://beta.reactjs.org/\\">React docs</a> - The react js docs is very intuitive and easy to follow along</li>\\n</ul>\\n<h2>Author</h2>\\n<ul>\\n<li>\\n<p>Website - <a href=\\"https://www.github.com/Devabubakar\\">Abubakar Ali</a></p>\\n</li>\\n<li>\\n<p>Twitter - <a href=\\"https://www.twitter.com/Devabubakar\\">Devabubakar</a></p>\\n</li>\\n</ul>\\n<h2>Acknowledgments</h2>\\n<ul>\\n<li>ps;; I forgot how to align a div inside a div - got help from stackoverflow</li>\\n</ul>","excerpt":"Netflix Clone Table of contents Overview Screenshot Links Built with What I learned Useful resources Author Acknowledgments Overview Mobile…","id":"ad262c50-b647-5b16-ade8-f8e7af0106e6","fields":{"slug":"/firstpost/"}}},{"node":{"frontmatter":{"title":"second Blog","date":"2020 - 02 -12"},"html":"<h3>Testing</h3>\\n<p>Bismillahi Rahmani Rahim</p>\\n<h2>Inshallah</h2>\\n<p>ALlah is the Best</p>","excerpt":"Testing Bismillahi Rahmani Rahim Inshallah ALlah is the Best","id":"736f62b4-a80d-5c99-bb1d-0c8f6c65e870","fields":{"slug":"/secondpost/"}}}]}}}');
 
 /***/ })
 
