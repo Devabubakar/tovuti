@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-episodes-sanity-episode-slug-current-js",
+    "path": "/episodes/send-transactional-emails-with-twilio-sendgrid/",
+    "result": {"data":{"sanityEpisode":{"slug":{"current":"send-transactional-emails-with-twilio-sendgrid"},"youtubeID":"EYdvyc4xz24","title":"Send Transactional Emails With Twilio SendGrid","date":"a month ago","description":"As part of Jamstack Conf, Jason is building a swag app with experts from around the community. This 5-part series will go through the whole process of building an e-commerce site with Shopify, Algolia, Sentry, Twilio, and Fauna.","image":{"asset":null}}},"pageContext":{"id":"-6123e7c2-d1c8-5083-8211-23148b0610c2","slug__current":"send-transactional-emails-with-twilio-sendgrid","__params":{"slug__current":"send-transactional-emails-with-twilio-sendgrid"}}},
+    "staticQueryHashes": ["2326376460","63159454"]}

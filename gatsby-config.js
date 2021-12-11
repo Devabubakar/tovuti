@@ -23,6 +23,14 @@ module.exports = {
         path: `${__dirname}/src/blogs`,
       },
     },
+    {
+      resolve: `gatsby-source-sanity`,
+      options: {
+        projectId: 'vnkupgyb',
+        dataset: 'production',
+      },
+    },
+    `gatsby-remark-images`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

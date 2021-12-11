@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-episodes-sanity-episode-slug-current-js",
+    "path": "/episodes/custom-cart-with-shopify-storefront-api/",
+    "result": {"data":{"sanityEpisode":{"slug":{"current":"custom-cart-with-shopify-storefront-api"},"youtubeID":"FJOJmKFngLI","title":"Custom Cart With Shopify Storefront API","date":"2 months ago","description":"As part of Jamstack Conf, Jason is building a swag app with experts from around the community. This 5-part series will go through the whole process of building an e-commerce site with Shopify, Algolia, Sentry, Twilio, and Fauna.\n\n","image":{"asset":null}}},"pageContext":{"id":"-f1431167-c872-52fb-9007-1f4a05fef844","slug__current":"custom-cart-with-shopify-storefront-api","__params":{"slug__current":"custom-cart-with-shopify-storefront-api"}}},
+    "staticQueryHashes": ["2326376460","63159454"]}
