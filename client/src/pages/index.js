@@ -32,7 +32,7 @@ const IndexPage = ({ data }) => {
       <h1>Hi people</h1>
       <p>Welcome to my new Blog.</p>
 
-      <ul>
+    
         {posts.nodes.map((post) => (
           <Blog key={post.title}>
             <p>
@@ -45,14 +45,14 @@ const IndexPage = ({ data }) => {
             <br />
           </Blog>
         ))}
-      </ul>
+   
     </Layout>
   );
 };
 
 export const query = graphql`
   query getAllPost {
-    allSanityPost {
+    allSanityPost(sort: { fields: date, order: DESC }) {
       nodes {
         title
         description
