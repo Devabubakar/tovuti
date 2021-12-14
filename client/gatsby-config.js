@@ -4,6 +4,15 @@ module.exports = {
     description: `Simple Blog Built`,
     author: `@🚀AbubakarAli`,
     siteUrl: `https://github.com/Devabubakar/`,
+    categories: [
+      'Home',
+      'UI/UX Design',
+      'Web Development',
+      'Typography',
+      'FreeLancing',
+      'LifeStyle',
+      'About Page',
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
