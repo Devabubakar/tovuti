@@ -17,13 +17,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `blogs`,
-        path: `${__dirname}/src/blogs`,
-      },
-    },
-    {
       resolve: `gatsby-source-sanity`,
       options: {
         projectId: 'g7vadz56', ////vnkupgyb
@@ -31,6 +24,7 @@ module.exports = {
         watchMode: true,
       },
     },
+    `gatsby-plugin-material-ui`,
     `gatsby-remark-images`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,

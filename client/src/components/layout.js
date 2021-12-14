@@ -9,8 +9,11 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
+import Container from '@mui/material/Container';
+
 import Header from './header';
 import './layout.css';
+import Footer from './footer';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,7 +28,7 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <>
+    <div>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
@@ -34,20 +37,10 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href='https://www.github.com/Devabubakar'>
-            {data.site.siteMetadata?.author}
-          </a>
-        </footer>
+        <Container>{children}</Container>
+        <Footer />
       </div>
-    </>
+    </div>
   );
 };
 
