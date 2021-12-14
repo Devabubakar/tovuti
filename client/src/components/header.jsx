@@ -33,16 +33,24 @@ const Header = ({ siteTitle }) => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar elevation={0} color='inherit' position='static'>
         <Toolbar sx={{ md: { mx: 3 }, mt: 3 }}>
-          <IconButton color='success'>
+          <IconButton
+            color='inherit'
+            sx={{ outline: 'green 3px solid', mx: 2 }}
+          >
             <AutoAwesomeIcon />
           </IconButton>
           <Typography
             variant='h5'
-            color='inherit'
-            sx={{ flexGrow: 1, fontWeight: 500, cursor: 'pointer' }}
+            sx={{
+              flexGrow: 1,
+              fontWeight: 500,
+              cursor: 'pointer',
+              color: 'success.main',
+            }}
           >
-            BLOGGER
+            TUVUTI
           </Typography>
+
           <StyledBox component='form' noValidate autoComplete='off'>
             <TextField
               label='Search...'
