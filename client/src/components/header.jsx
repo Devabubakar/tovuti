@@ -14,7 +14,7 @@ import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Categories from './categories';
 const StyledBox = styled(Box)(({ theme }) => ({
-  '& .MuiTextField-root': { width: '15ch' },
+  '& .MuiTextField-root': { width: '10ch' , transition:'500ms ease-in-out' , '&:hover':{width:'15ch'} },
   display: 'flex',
   [theme.breakpoints.down('md')]: {
     display: 'none',
@@ -53,7 +53,7 @@ const Header = ({ siteTitle }) => {
 
           <StyledBox component='form' noValidate autoComplete='off'>
             <TextField
-              label='Search...'
+              label='search...'
               type='search'
               variant='standard'
               startadornment={
