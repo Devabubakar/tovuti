@@ -33,7 +33,6 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
 
       <Container>{children}</Container>
-      <Footer />
     </Box>
   );
 };

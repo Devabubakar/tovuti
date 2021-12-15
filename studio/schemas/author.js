@@ -1,11 +1,11 @@
 export default {
-  title: 'Author',
+  title: 'Authors',
   name: 'author',
   type: 'document',
   fields: [
     {
       title: 'Full Name',
-      name: 'author',
+      name: 'name',
       type: 'string',
       Validation: (Rule) => Rule.required(),
     },

@@ -24,32 +24,42 @@ export const Blog = styled.div`
 `;
 
 const IndexPage = ({ data }) => {
-  const blogs = data.allSanityPost.nodes;
+  const blogs = data.allSanityBlog.nodes;
+  const totalCount = data.totalCount;
 
   return (
     <Layout>
       <Seo title='Home' />
-      <Hero blogs={blogs} />
+      <Hero blogs={blogs} totalCount={totalCount} />
     </Layout>
   );
 };
 
 export const query = graphql`
-  query GetAllPost {
-    allSanityPost(
-      filter: { image: { asset: { gatsbyImageData: { ne: "null" } } } }
-    ) {
+  query MyQuery {
+    allSanityBlog {
       nodes {
+        id
         date(fromNow: true)
         description
-        _rawContent(resolveReferences: { maxDepth: 10 })
-        id
         title
         image {
           asset {
             gatsbyImageData
           }
         }
+        author {
+          name
+          cover {
+            asset {
+              gatsbyImageData
+            }
+          }
+        }
+        categories {
+          category
+        }
+        _rawContent(resolveReferences: { maxDepth: 10 })
       }
       totalCount
     }

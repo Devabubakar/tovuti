@@ -33,7 +33,7 @@ module.exports = {
         watchMode: true,
       },
     },
-    `gatsby-plugin-material-ui`,
+
     `gatsby-remark-images`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
