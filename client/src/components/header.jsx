@@ -56,11 +56,14 @@ const Header = ({ siteTitle }) => {
               label='search...'
               type='search'
               variant='standard'
-              startadornment={
-                <InputAdornment position='start'>
+              InputProps = {{
+                 endAdornment:(
+                <InputAdornment position='end'>
                   <SearchIcon />
                 </InputAdornment>
-              }
+                 )
+              }}
+             
             />
           </StyledBox>
           <Button color='success' sx={{ mx: 3 }}>
