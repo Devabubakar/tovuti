@@ -1,6 +1,6 @@
 export default {
-  title: 'Blog Post',
-  name: 'post',
+  title: 'Blog',
+  name: 'blog',
   type: 'document',
   fields: [
     {
@@ -27,6 +27,30 @@ export default {
       type: 'string',
       validation: (Rule) => Rule.required(),
     },
+    {
+      title: 'Categories',
+      name: 'categories',
+      type: 'array',
+      validation: (Rule) =>
+        Rule.unique().error('you can only have one of a category'),
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'categories' }],
+        },
+      ],
+
+      options: {
+        layout: 'tags',
+      },
+    },
+    {
+      title: 'Author',
+      name: 'author',
+      type: 'reference',
+      to: { type: 'author' },
+    },
+
     {
       title: 'Content',
       name: 'content',

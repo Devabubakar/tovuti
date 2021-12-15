@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 
-
 import Layout from '../components/layout';
 import Seo from '../components/seo';
 import { graphql } from 'gatsby';
@@ -36,14 +35,23 @@ const IndexPage = ({ data }) => {
 };
 
 export const query = graphql`
-  query getAllPost {
-    allSanityPost(sort: { fields: date, order: DESC }) {
+  query GetAllPost {
+    allSanityPost(
+      filter: { image: { asset: { gatsbyImageData: { ne: "null" } } } }
+    ) {
       nodes {
-        title
-        description
         date(fromNow: true)
+        description
         _rawContent(resolveReferences: { maxDepth: 10 })
+        id
+        title
+        image {
+          asset {
+            gatsbyImageData
+          }
+        }
       }
+      totalCount
     }
   }
 `;
