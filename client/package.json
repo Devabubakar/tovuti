@@ -7,6 +7,7 @@
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.4",
     "@mui/material": "^5.2.4",
     "@sanity/block-content-to-react": "^3.0.0",
     "babel-plugin-styled-components": "^2.0.2",
@@ -23,6 +24,8 @@
     "gatsby-source-sanity": "^7.3.2",
     "gatsby-transformer-remark": "^5.3.0",
     "gatsby-transformer-sharp": "^4.3.0",
+    "install": "^0.13.0",
+    "npm": "^8.3.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
