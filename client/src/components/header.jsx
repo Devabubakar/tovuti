@@ -12,10 +12,15 @@ import InputAdornment from '@mui/material/InputAdornment';
 import SearchIcon from '@mui/icons-material/Search';
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
-import Categories from './categories';
+
 const StyledBox = styled(Box)(({ theme }) => ({
-  '& .MuiTextField-root': { width: '10ch' , transition:'500ms ease-in-out' , '&:hover':{width:'15ch'} },
+  '& .MuiTextField-root': {
+    width: '10ch',
+    transition: '500ms ease-in-out',
+    '&:hover': { width: '15ch' },
+  },
   display: 'flex',
+
   [theme.breakpoints.down('md')]: {
     display: 'none',
   },
@@ -29,6 +34,8 @@ const StyledButton = styled(Button)(({ theme }) => ({
 }));
 
 const Header = ({ siteTitle }) => {
+  
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar elevation={0} color='inherit' position='static'>
@@ -56,14 +63,13 @@ const Header = ({ siteTitle }) => {
               label='search...'
               type='search'
               variant='standard'
-              InputProps = {{
-                 endAdornment:(
-                <InputAdornment position='end'>
-                  <SearchIcon />
-                </InputAdornment>
-                 )
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position='end'>
+                    <SearchIcon />
+                  </InputAdornment>
+                ),
               }}
-             
             />
           </StyledBox>
           <Button color='success' sx={{ mx: 3 }}>
@@ -74,7 +80,6 @@ const Header = ({ siteTitle }) => {
           </StyledButton>
         </Toolbar>
       </AppBar>
-      <Categories />
     </Box>
   );
 };

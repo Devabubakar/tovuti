@@ -1,69 +1,25 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
+
 
 import Layout from '../components/layout';
 import Seo from '../components/seo';
-import { graphql } from 'gatsby';
-import styled from 'styled-components';
 
 import Hero from '../components/hero';
+import List from '../components/list';
+import { useBlogData } from '../hooks/useBlogData';
+import Blogs from '../components/blogs';
 
-export const Blog = styled.div`
-  background-color: #333333;
-  color: white;
-  border-radius: 12px;
-  padding: 1%;
-
-  text-align: start;
-  margin: 5%;
-
-  p :last-of-type {
-    padding: 0 12px;
-    margin: 5%;
-  }
-`;
-
-const IndexPage = ({ data }) => {
-  const blogs = data.allSanityBlog.nodes;
-  const totalCount = data.totalCount;
+const IndexPage = () => {
+  const blogs = useBlogData();
 
   return (
     <Layout>
       <Seo title='Home' />
-      <Hero blogs={blogs} totalCount={totalCount} />
+      <Hero blogs={blogs} />
+      <List blogs={blogs} />
+      <Blogs blogs={blogs} />
     </Layout>
   );
 };
-
-export const query = graphql`
-  query MyQuery {
-    allSanityBlog {
-      nodes {
-        id
-        date(fromNow: true)
-        description
-        title
-        image {
-          asset {
-            gatsbyImageData
-          }
-        }
-        author {
-          name
-          cover {
-            asset {
-              gatsbyImageData
-            }
-          }
-        }
-        categories {
-          category
-        }
-        _rawContent(resolveReferences: { maxDepth: 10 })
-      }
-      totalCount
-    }
-  }
-`;
 
 export default IndexPage;

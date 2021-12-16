@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@mui/material": "^5.2.4",
+    "@mui/styled-engine-sc": "^5.1.0",
     "@sanity/block-content-to-react": "^3.0.0",
     "babel-plugin-styled-components": "^2.0.2",
     "gatsby": "^4.3.0",

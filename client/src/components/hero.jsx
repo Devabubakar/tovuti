@@ -18,24 +18,28 @@ const StyledImage = styled(GatsbyImage)`
     scale: 3;
   }
 `;
-const StyledAvator = styled(GatsbyImage)`
+export const StyledAvator = styled(GatsbyImage)`
   border-radius: 50%;
   height: 45px;
   aspect-ratio: 1/1;
 `;
 
-const Hero = ({ blogs, totalCount }) => {
-  const blog = blogs[Math.floor(Math.random() * blogs.length)];
+const Hero = ({ blogs }) => {
+  if (!blogs) {
+    return null;
+  }
+
+  const blog = blogs[0].node;
 
   const avatarImage = getImage(blog.author.cover.asset.gatsbyImageData);
 
   return (
-    <Box px='2%'>
-      <TopicHeading />
+    <Box>
+      <TopicHeading topic='Featured Blog' />
       <Grid container spacing={3} py='2%' sx={{ cursor: 'pointer' }}>
         <Grid item md={6} lg={8}>
           <StyledImage
-            image={blog.image.asset.gatsbyImageData}
+            image={blog?.image.asset.gatsbyImageData}
             placeholder='blurred'
             alt='Blog preview'
           />
@@ -47,14 +51,12 @@ const Hero = ({ blogs, totalCount }) => {
               fontWeight: '800',
               transition: 'all 500ms',
               fontSize: '1.85em',
-              color: 'success.main',
-              '&:hover': { color: 'black' },
             }}
           >
-            {blog.title}
+            {blog?.title}
           </Typography>
           <Typography variant='p' color='gray'>
-            {blog.description}
+            {blog?.description}
           </Typography>
           <Grid container spacing={1} mt={1}>
             <Grid item xs={2}>
@@ -62,10 +64,10 @@ const Hero = ({ blogs, totalCount }) => {
             </Grid>
             <Grid item xs={10}>
               <Typography sx={{ fontSize: '16px' }}>
-                {blog.author.name}
+                {blog?.author.name}
               </Typography>
               <Typography sx={{ fontSize: '14px', color: 'gray' }}>
-                {blog.date}
+                {blog?.date}
               </Typography>
             </Grid>
           </Grid>

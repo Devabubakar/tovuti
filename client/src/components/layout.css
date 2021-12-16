@@ -5,6 +5,7 @@ html {
   font: 112.5%/1.45em Roboto, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  cursor: 'pointer';
 }
 body {
   margin: 0;
@@ -345,7 +346,6 @@ hgroup {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  
 }
 ul {
   margin-left: 1.45rem;

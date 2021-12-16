@@ -15,6 +15,7 @@ import Header from './header';
 import './layout.css';
 import Footer from './footer';
 import Box from '@mui/material/Box';
+import Navigation from './navigation';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -31,6 +32,7 @@ const Layout = ({ children }) => {
   return (
     <Box sx={{ flexShrink: 1 }}>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Navigation />
 
       <Container>{children}</Container>
     </Box>
