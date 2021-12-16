@@ -15,7 +15,10 @@ const Navigation = () => {
       setScrolled(false);
     }
   };
-  window.addEventListener('scroll', handleScroll);
+
+  if (typeof window !== 'undefined') {
+    window.addEventListener('scroll', handleScroll);
+  }
 
   const data = useStaticQuery(graphql`
     query MyCategories {

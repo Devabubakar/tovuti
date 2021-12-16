@@ -34,8 +34,6 @@ const StyledButton = styled(Button)(({ theme }) => ({
 }));
 
 const Header = ({ siteTitle }) => {
-  
-
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar elevation={0} color='inherit' position='static'>
