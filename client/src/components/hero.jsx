@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
 
-import { graphql } from 'gatsby';
+
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Typography from '@mui/material/Typography';
 
