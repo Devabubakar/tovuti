@@ -17,6 +17,7 @@ import Footer from './footer';
 import Box from '@mui/material/Box';
 import Navigation from './navigation';
 
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -35,6 +36,7 @@ const Layout = ({ children }) => {
       <Navigation />
 
       <Container>{children}</Container>
+      <Footer />
     </Box>
   );
 };

@@ -18,7 +18,14 @@ const CardContainer = ({ blog }) => {
   const avatarImage = getImage(blog?.author.cover.asset.gatsbyImageData);
 
   return (
-    <Card elevation={0} sx={{ maxWidth: 600 }}>
+    <Card
+      elevation={0}
+      sx={{
+        maxWidth: 600,
+        cursor: 'pointer',
+        '&:hover': { color: 'success.main' },
+      }}
+    >
       <CardActionArea>
         <StyledImage
           alt='card media'

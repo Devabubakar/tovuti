@@ -1,7 +1,6 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
 
-
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Typography from '@mui/material/Typography';
 
@@ -34,7 +33,7 @@ const Hero = ({ blogs }) => {
   const avatarImage = getImage(blog.author.cover.asset.gatsbyImageData);
 
   return (
-    <Box>
+    <Box sx={{ cursor: 'pointer' }}>
       <TopicHeading topic='Featured Blog' />
       <Grid container spacing={3} py='2%' sx={{ cursor: 'pointer' }}>
         <Grid item md={6} lg={8}>
@@ -51,6 +50,7 @@ const Hero = ({ blogs }) => {
               fontWeight: '800',
               transition: 'all 500ms',
               fontSize: '1.85em',
+              '&:hover': { color: 'success.main' },
             }}
           >
             {blog?.title}

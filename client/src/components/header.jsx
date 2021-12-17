@@ -49,7 +49,6 @@ const Header = ({ siteTitle }) => {
             sx={{
               flexGrow: 1,
               fontWeight: 500,
-              cursor: 'pointer',
               color: 'success.main',
             }}
           >

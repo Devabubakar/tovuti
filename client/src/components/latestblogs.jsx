@@ -8,9 +8,9 @@ import TopicHeading from './topic';
 
 const LatestBlogs = ({ blogs }) => {
   return (
-    <Box>
+    <Box sx={{ cursor: 'pointer' }}>
       <TopicHeading topic='Latest Blogs' />
-      {blogs.slice(0, 5).map((blog, index) => {
+      {blogs.slice(0, 3).map((blog, index) => {
         return (
           <Grid
             container
@@ -20,7 +20,10 @@ const LatestBlogs = ({ blogs }) => {
             sx={{ md: { width: '60%' } }}
           >
             <Grid item sm={8}>
-              <Typography variant='h6' sx={{ fontWeight: '600' }}>
+              <Typography
+                variant='h6'
+                sx={{ fontWeight: '600', '&:hover': { color: 'success.main' } }}
+              >
                 {blog.node.title}
               </Typography>
               <Typography my={2} sx={{ color: 'gray' }}>

@@ -7,7 +7,7 @@ import TopicHeading from './topic';
 
 const PopularBlogs = ({ blogs }) => {
   return (
-    <Box mx={3} sx={{ position: 'sticky' }}>
+    <Box mx={3} sx={{ position: 'sticky', cursor: 'pointer' }}>
       <TopicHeading topic='Popular Blogs' />
       {blogs.slice(0, 5).map((blog, index) => {
         return (
@@ -18,7 +18,10 @@ const PopularBlogs = ({ blogs }) => {
               </Typography>
             </Grid>
             <Grid item lg={10}>
-              <Typography variant='p' sx={{ fontWeight: 600 }}>
+              <Typography
+                variant='p'
+                sx={{ fontWeight: 600, '&:hover': { color: 'success.main' } }}
+              >
                 {blog.node.title}
               </Typography>
               <Typography fontSize='16px' mt={1}>

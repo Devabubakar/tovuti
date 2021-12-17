@@ -40,13 +40,11 @@ const Navigation = () => {
     margin: '1% 2%',
     padding: '1em',
     background: `${scrolled ? '#fff' : 'transparent'}`,
-    zIndex: `${scrolled ? '1' : '-1'}`,
+    zIndex: 1000,
     top: `${scrolled ? '0' : null}`,
     marginTop: `${scrolled ? '0' : null}`,
     width: `calc(100% - 2%)`,
     transition: 'all 500ms',
-
-    cursor: 'pointer',
   }));
   const categories = data.site.siteMetadata.categories;
 
@@ -58,15 +56,15 @@ const Navigation = () => {
           color='gray'
           key={index}
           sx={{
+            cursor: 'pointer',
             '&:first-of-type': {
               color: 'black',
             },
             '&:hover': {
-              color: 'black',
+              color: 'success.main',
             },
           }}
         >
-          {' '}
           {category}
         </Typography>
       ))}
