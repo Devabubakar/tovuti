@@ -16,12 +16,20 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      title: 'Slug',
+      name: 'slug',
+      type: 'slug',
+      options: {
+        source: (doc, options) => options.parent.title,
+      },
+    },
+    {
       title: 'Image Preview',
       name: 'image',
       type: 'image',
       validation: (Rule) => Rule.required(),
     },
-    
+
     {
       title: 'Description',
       name: 'description',

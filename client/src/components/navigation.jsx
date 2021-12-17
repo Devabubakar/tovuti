@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
+import { StyledLink } from './reusableStyles';
 
 const Navigation = () => {
   //scroll event listener
@@ -51,22 +52,24 @@ const Navigation = () => {
   return (
     <StyledBox>
       {categories.map((category, index) => (
-        <Typography
-          variant='p'
-          color='gray'
-          key={index}
-          sx={{
-            cursor: 'pointer',
-            '&:first-of-type': {
-              color: 'black',
-            },
-            '&:hover': {
-              color: 'success.main',
-            },
-          }}
-        >
-          {category}
-        </Typography>
+        <StyledLink to={category}>
+          <Typography
+            variant='p'
+            color='gray'
+            key={index}
+            sx={{
+              cursor: 'pointer',
+              '&:first-of-type': {
+                color: 'black',
+              },
+              '&:hover': {
+                color: 'success.main',
+              },
+            }}
+          >
+            {category}
+          </Typography>
+        </StyledLink>
       ))}
     </StyledBox>
   );

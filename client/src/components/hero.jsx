@@ -7,11 +7,12 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import styled from 'styled-components';
 import TopicHeading from './topic';
+import { StyledLink } from './reusableStyles';
 
 const StyledImage = styled(GatsbyImage)`
   border-radius: 6px;
   object-fit: 'cover';
-  max-height: 400px;
+  max-height: 350px;
   transition: 'all 250ms';
   '&:hover': {
     scale: 3;
@@ -33,7 +34,7 @@ const Hero = ({ blogs }) => {
   const avatarImage = getImage(blog.author.cover.asset.gatsbyImageData);
 
   return (
-    <Box sx={{ cursor: 'pointer' }}>
+    <Box>
       <TopicHeading topic='Featured Blog' />
       <Grid container spacing={3} py='2%' sx={{ cursor: 'pointer' }}>
         <Grid item md={6} lg={8}>
@@ -44,17 +45,20 @@ const Hero = ({ blogs }) => {
           />
         </Grid>
         <Grid item md={6} lg={4} pl={2}>
-          <Typography
-            mb={1}
-            sx={{
-              fontWeight: '800',
-              transition: 'all 500ms',
-              fontSize: '1.85em',
-              '&:hover': { color: 'success.main' },
-            }}
-          >
-            {blog?.title}
-          </Typography>
+          <StyledLink to={blog.slug.current}>
+            <Typography
+              mb={1}
+              sx={{
+                fontWeight: '800',
+                transition: 'all 500ms',
+                fontSize: '1.85em',
+                cursor: 'pointer',
+                '&:hover': { color: 'success.main' },
+              }}
+            >
+              {blog?.title}
+            </Typography>
+          </StyledLink>
           <Typography variant='p' color='gray'>
             {blog?.description}
           </Typography>

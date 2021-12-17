@@ -12,6 +12,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import SearchIcon from '@mui/icons-material/Search';
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
+import { StyledLink } from './reusableStyles';
 
 const StyledBox = styled(Box)(({ theme }) => ({
   '& .MuiTextField-root': {
@@ -38,12 +39,14 @@ const Header = ({ siteTitle }) => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar elevation={0} color='inherit' position='static'>
         <Toolbar sx={{ md: { mx: 3 }, mt: 3 }}>
-          <IconButton
-            color='inherit'
-            sx={{ outline: 'green 3px solid', mx: 2 }}
-          >
-            <AutoAwesomeIcon />
-          </IconButton>
+          <StyledLink to='/'>
+            <IconButton
+              color='inherit'
+              sx={{ outline: 'green 3px solid', mx: 2 }}
+            >
+              <AutoAwesomeIcon />
+            </IconButton>
+          </StyledLink>
           <Typography
             variant='h5'
             sx={{

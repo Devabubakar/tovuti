@@ -11,6 +11,9 @@ export const useBlogData = () => {
               date(formatString: "DD MMMM")
               description
               title
+              slug {
+                current
+              }
               image {
                 asset {
                   gatsbyImageData

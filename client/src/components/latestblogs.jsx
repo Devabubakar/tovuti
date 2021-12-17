@@ -5,10 +5,11 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import Box from '@mui/material/Box';
 import { StyledAvator } from './hero';
 import TopicHeading from './topic';
+import { StyledLink } from './reusableStyles';
 
 const LatestBlogs = ({ blogs }) => {
   return (
-    <Box sx={{ cursor: 'pointer' }}>
+    <Box>
       <TopicHeading topic='Latest Blogs' />
       {blogs.slice(0, 3).map((blog, index) => {
         return (
@@ -20,12 +21,18 @@ const LatestBlogs = ({ blogs }) => {
             sx={{ md: { width: '60%' } }}
           >
             <Grid item sm={8}>
-              <Typography
-                variant='h6'
-                sx={{ fontWeight: '600', '&:hover': { color: 'success.main' } }}
-              >
-                {blog.node.title}
-              </Typography>
+              <StyledLink to={blog.node.slug.current}>
+                <Typography
+                  variant='h6'
+                  sx={{
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    '&:hover': { color: 'success.main' },
+                  }}
+                >
+                  {blog.node.title}
+                </Typography>
+              </StyledLink>
               <Typography my={2} sx={{ color: 'gray' }}>
                 {blog.node.description}
               </Typography>
