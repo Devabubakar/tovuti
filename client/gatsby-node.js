@@ -34,6 +34,33 @@ async function createCategoriesPages(graphql, actions) {
   });
 }
 
+exports.createResolvers = ({ createResolvers }) => {
+  const resolvers = {
+    SanityCategories: {
+      blogs: {
+        type: ['SanityBlog'],
+        resolve(source, args, context, info) {
+          return context.nodeModel.runQuery({
+            type: 'SanityBlog',
+            query: {
+              filter: {
+                categories: {
+                  elemMatch: {
+                    _id: {
+                      eq: source._id,
+                    },
+                  },
+                },
+              },
+            },
+          });
+        },
+      },
+    },
+  };
+  createResolvers(resolvers);
+};
+
 exports.createPages = async ({ graphql, actions }) => {
   await createCategoriesPages(graphql, actions);
 };
