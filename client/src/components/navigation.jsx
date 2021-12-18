@@ -52,7 +52,12 @@ const Navigation = () => {
   return (
     <StyledBox>
       {categories.map((category, index) => (
-        <StyledLink to={category}>
+        <StyledLink
+          to={`/categories/${category
+            .toLowerCase()
+            .replace(/ /g, '-')
+            .replace(/[^\w-]+/g, '-')}`}
+        >
           <Typography
             variant='p'
             color='gray'

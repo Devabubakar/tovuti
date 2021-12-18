@@ -11,7 +11,6 @@ const PopularBlogs = ({ blogs }) => {
     <Box mx={3} sx={{ position: 'sticky' }}>
       <TopicHeading topic='Popular Blogs' />
       {blogs.slice(0, 5).map((blog, index) => {
-        console.log(blog);
         return (
           <Grid container my='2em' key={index}>
             <Grid item lg={2}>

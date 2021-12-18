@@ -32,10 +32,11 @@ const LatestBlogs = ({ blogs }) => {
                 >
                   {blog.node.title}
                 </Typography>
+
+                <Typography my={2} sx={{ color: 'gray' }}>
+                  {blog.node.description}
+                </Typography>
               </StyledLink>
-              <Typography my={2} sx={{ color: 'gray' }}>
-                {blog.node.description}
-              </Typography>
               <Grid container spacing={1}>
                 <Grid item md={2}>
                   <StyledAvator

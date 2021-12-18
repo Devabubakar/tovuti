@@ -29,6 +29,9 @@ export const useBlogData = () => {
               }
               categories {
                 category
+                slug {
+                  current
+                }
               }
               _rawContent(resolveReferences: { maxDepth: 10 })
             }
