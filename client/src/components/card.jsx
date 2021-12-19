@@ -21,6 +21,7 @@ const CardContainer = ({ blog }) => {
   return (
     <Card
       elevation={0}
+      my={3}
       sx={{
         maxWidth: 600,
         cursor: 'pointer',

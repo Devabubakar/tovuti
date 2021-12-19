@@ -9,18 +9,20 @@ import Grid from '@mui/material/Grid';
 
 import Box from '@mui/material/Box';
 
-
 export default function Categories({ data }) {
   return (
     <Layout>
       <Seo title={data.sanityCategories.category} />
       <Container maxWidth='md'>
-        <Typography variant='h3' sx={{ fontWeight: 800, textAlign: 'center' }}>
+        <Typography
+          variant='h4'
+          mt={2}
+          sx={{ fontWeight: 800, textAlign: 'center' }}
+        >
           {data.sanityCategories.category}
         </Typography>
         {data.sanityCategories.blogs.length === 0 ? (
           <Box>
-    
             <Typography> Empty for now . come back later</Typography>
           </Box>
         ) : (
