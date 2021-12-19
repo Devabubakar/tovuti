@@ -52,29 +52,31 @@ const Navigation = () => {
   return (
     <StyledBox>
       {categories.map((category, index) => (
-        <StyledLink
-          to={`/categories/${category
-            .toLowerCase()
-            .replace(/ /g, '-')
-            .replace(/[^\w-]+/g, '-')}`}
-        >
-          <Typography
-            variant='p'
-            color='gray'
-            key={index}
-            sx={{
-              cursor: 'pointer',
-              '&:first-of-type': {
-                color: 'black',
-              },
-              '&:hover': {
-                color: 'success.main',
-              },
-            }}
+        <Box key={index}>
+          <StyledLink
+            to={`/categories/${category
+              .toLowerCase()
+              .replace(/ /g, '-')
+              .replace(/[^\w-]+/g, '-')}`}
           >
-            {category}
-          </Typography>
-        </StyledLink>
+            <Typography
+              variant='p'
+              color='gray'
+              key={index}
+              sx={{
+                cursor: 'pointer',
+                '&:first-of-type': {
+                  color: 'black',
+                },
+                '&:hover': {
+                  color: 'success.main',
+                },
+              }}
+            >
+              {category}
+            </Typography>
+          </StyledLink>
+        </Box>
       ))}
     </StyledBox>
   );

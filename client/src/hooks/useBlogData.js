@@ -4,11 +4,11 @@ export const useBlogData = () => {
   const data = useStaticQuery(
     graphql`
       query AllBlogs {
-        allSanityBlog {
+        allSanityBlog(sort: { fields: date, order: DESC }) {
           edges {
             node {
               id
-              date(formatString: "DD MMMM")
+              date(fromNow: true)
               description
               title
               slug {

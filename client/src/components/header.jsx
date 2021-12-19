@@ -13,6 +13,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import { StyledLink } from './reusableStyles';
+import { useLocation } from '@reach/router';
+import { Link } from 'gatsby';
 
 const StyledBox = styled(Box)(({ theme }) => ({
   '& .MuiTextField-root': {
@@ -21,10 +23,6 @@ const StyledBox = styled(Box)(({ theme }) => ({
     '&:hover': { width: '15ch' },
   },
   display: 'flex',
-
-  [theme.breakpoints.down('md')]: {
-    display: 'none',
-  },
 }));
 
 const StyledButton = styled(Button)(({ theme }) => ({
@@ -35,6 +33,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
 }));
 
 const Header = ({ siteTitle }) => {
+  const location = useLocation();
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar elevation={0} color='inherit' position='static'>
@@ -49,15 +48,17 @@ const Header = ({ siteTitle }) => {
           </StyledLink>
           <Typography
             variant='h5'
+            component={Link}
+            to='/'
             sx={{
               flexGrow: 1,
               fontWeight: 500,
               color: 'success.main',
+              textDecoration: 'none',
             }}
           >
             TUVUTI
           </Typography>
-
           <StyledBox component='form' noValidate autoComplete='off'>
             <TextField
               label='search...'
@@ -72,9 +73,13 @@ const Header = ({ siteTitle }) => {
               }}
             />
           </StyledBox>
-          <Button color='success' sx={{ mx: 3 }}>
-            All Blogs
-          </Button>
+          {location.pathname !== '/allblogs' ? (
+            <StyledLink to='/allblogs'>
+              <Button color='success' sx={{ mx: 3 }}>
+                All Blogs
+              </Button>
+            </StyledLink>
+          ) : null}
         </Toolbar>
       </AppBar>
     </Box>
