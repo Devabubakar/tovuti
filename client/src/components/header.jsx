@@ -73,11 +73,8 @@ const Header = ({ siteTitle }) => {
             />
           </StyledBox>
           <Button color='success' sx={{ mx: 3 }}>
-            Sign In
+            All Blogs
           </Button>
-          <StyledButton variant='outlined' color='success'>
-            Create an Account
-          </StyledButton>
         </Toolbar>
       </AppBar>
     </Box>

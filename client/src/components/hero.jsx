@@ -59,7 +59,7 @@ const Hero = ({ blogs }) => {
               {blog?.title}
             </Typography>
           </StyledLink>
-          <Typography variant='p' color='gray'>
+          <Typography variant='p' color='gray' my={2}>
             {blog?.description}
           </Typography>
           <Grid container spacing={1} mt={1}>
