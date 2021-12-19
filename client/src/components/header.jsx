@@ -25,12 +25,7 @@ const StyledBox = styled(Box)(({ theme }) => ({
   display: 'flex',
 }));
 
-const StyledButton = styled(Button)(({ theme }) => ({
-  display: 'flex',
-  [theme.breakpoints.down('sm')]: {
-    display: 'none',
-  },
-}));
+
 
 const Header = ({ siteTitle }) => {
   const location = useLocation();
@@ -59,20 +54,7 @@ const Header = ({ siteTitle }) => {
           >
             TUVUTI
           </Typography>
-          <StyledBox component='form' noValidate autoComplete='off'>
-            <TextField
-              label='search...'
-              type='search'
-              variant='standard'
-              InputProps={{
-                endAdornment: (
-                  <InputAdornment position='end'>
-                    <SearchIcon />
-                  </InputAdornment>
-                ),
-              }}
-            />
-          </StyledBox>
+         
           {location.pathname !== '/allblogs' ? (
             <StyledLink to='/allblogs'>
               <Button color='success' sx={{ mx: 3 }}>
