@@ -31,14 +31,14 @@ const SanityBlog = ({ data }) => {
           alt='blog image'
         />
         <Box textAlign='center' sx={{ cursor: 'pointer' }}>
-          <Grid container mt={2}>
+          <Grid container mt={2} my={3}>
             <Grid item sm={1}>
               <StyledAvator
                 alt='author avator'
                 image={blog.author.cover.asset.gatsbyImageData}
               />
             </Grid>
-            <Grid item sm={4}>
+            <Grid item sm={4} sx={{ textAlign: 'start' }}>
               <Typography sx={{ fontSize: '16px' }}>
                 {blog?.author.name} in {blog.categories[0].category}
               </Typography>

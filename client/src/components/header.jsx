@@ -40,7 +40,7 @@ const Header = ({ siteTitle }) => {
               textDecoration: 'none',
             }}
           >
-            TUVUTI
+            TOVUTI
           </Typography>
 
           {location.pathname !== '/allblogs' ? (
