@@ -7,23 +7,11 @@ import Box from '@mui/material/Box';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import Typography from '@mui/material/Typography';
 
-import TextField from '@mui/material/TextField';
-import InputAdornment from '@mui/material/InputAdornment';
-import SearchIcon from '@mui/icons-material/Search';
-import { styled } from '@mui/material/styles';
+
 import Button from '@mui/material/Button';
 import { StyledLink } from './reusableStyles';
 import { useLocation } from '@reach/router';
 import { Link } from 'gatsby';
-
-const StyledBox = styled(Box)(({ theme }) => ({
-  '& .MuiTextField-root': {
-    width: '10ch',
-    transition: '500ms ease-in-out',
-    '&:hover': { width: '15ch' },
-  },
-  display: 'flex',
-}));
 
 
 
@@ -54,7 +42,7 @@ const Header = ({ siteTitle }) => {
           >
             TUVUTI
           </Typography>
-         
+
           {location.pathname !== '/allblogs' ? (
             <StyledLink to='/allblogs'>
               <Button color='success' sx={{ mx: 3 }}>
