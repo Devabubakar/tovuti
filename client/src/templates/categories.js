@@ -7,6 +7,9 @@ import Typography from '@mui/material/Typography';
 import CardContainer from '../components/card';
 import Grid from '@mui/material/Grid';
 
+import Box from '@mui/material/Box';
+
+
 export default function Categories({ data }) {
   return (
     <Layout>
@@ -15,15 +18,22 @@ export default function Categories({ data }) {
         <Typography variant='h3' sx={{ fontWeight: 800, textAlign: 'center' }}>
           {data.sanityCategories.category}
         </Typography>
-        <Grid container spacing={3} direction='row' mt={2}>
-          {data.sanityCategories.blogs.map((blog, index) => {
-            return (
-              <Grid item xs={12} sm={6} key={index}>
-                <CardContainer blog={blog} />
-              </Grid>
-            );
-          })}
-        </Grid>
+        {data.sanityCategories.blogs.length === 0 ? (
+          <Box>
+    
+            <Typography> Empty for now . come back later</Typography>
+          </Box>
+        ) : (
+          <Grid container spacing={3} direction='row' mt={2}>
+            {data.sanityCategories.blogs.map((blog, index) => {
+              return (
+                <Grid item xs={12} sm={6} key={index}>
+                  <CardContainer blog={blog} />
+                </Grid>
+              );
+            })}
+          </Grid>
+        )}
       </Container>
     </Layout>
   );

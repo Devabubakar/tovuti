@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Simple Blog`,
-    description: `Simple Blog Built`,
+    title: `Tovuti Blog`,
+    description: `Tovuti Blog`,
     author: `@🚀AbubakarAli`,
     siteUrl: `https://github.com/Devabubakar/`,
     categories: [
