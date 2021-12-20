@@ -13,7 +13,7 @@ import styled from 'styled-components';
 import Grid from '@mui/material/Grid';
 
 const StyledImage = styled(GatsbyImage)`
-  max-height: 400px;
+  max-height: 500px;
   border-radius: 12px;
   margin: 0 auto;
 `;
@@ -40,14 +40,14 @@ const SanityBlog = ({ data }) => {
             </Grid>
             <Grid item sm={4} sx={{ textAlign: 'start' }}>
               <Typography sx={{ fontSize: '16px' }}>
-                {blog?.author.name} in {blog.categories[0].category}
+                {blog?.author.name} 
               </Typography>
               <Typography sx={{ fontSize: '14px', color: 'gray' }}>
                 {blog?.date}
               </Typography>
             </Grid>
           </Grid>
-          <Typography variant='h4' sx={{ fontWeight: 600 }} my={2}>
+          <Typography variant='h5' sx={{ fontWeight: 600 }} my={2}>
             {blog.title}
           </Typography>
         </Box>
