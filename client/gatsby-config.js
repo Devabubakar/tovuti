@@ -40,26 +40,14 @@ module.exports = {
         lang: `en`,
         display: `standalone`,
         icon: `src/images/gatsby-icon.png`,
-        icons: [
-          {
-            src: `/favicons/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/favicons/android-chrome-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
-        ], // A,
         icon_options: {
           // For all the options available,
           // please see the section "Additional Resources" below.
-          purpose: `any maskable`,
+          purpose: `maskable`,
         },
         start_url: `/`,
         background_color: `#663399`,
-        theme_color: `#fff`,
+        theme_color: `#1d69ab`,
         legacy: false,
       },
     },
@@ -75,6 +63,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-offline`,
 
     {
       resolve: `gatsby-plugin-manifest`,
