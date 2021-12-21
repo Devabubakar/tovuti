@@ -29,6 +29,8 @@ const Hero = ({ blogs }) => {
     return null;
   }
 
+  console.log(blogs);
+
   const blog = blogs[0].node;
 
   const avatarImage = getImage(blog.author.cover.asset.gatsbyImageData);

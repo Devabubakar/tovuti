@@ -42,5 +42,6 @@ export const useBlogData = () => {
       }
     `
   );
+  
   return data.allSanityBlog.edges;
 };
