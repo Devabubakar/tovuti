@@ -36,17 +36,37 @@ module.exports = {
       options: {
         name: `Tovuti by Abubakar`,
         short_name: `Tovuti`,
-        start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
+        description: `simple blog built by Abubakar`,
+        lang: `en`,
         display: `standalone`,
-        icons: `src/images/gatsby-icon.png`,
+        icon: `src/images/gatsby-icon.png`,
+        icons: [
+          {
+            src: `/favicons/android-chrome-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicons/android-chrome-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+          },
+        ], // A,
         icon_options: {
           // For all the options available,
           // please see the section "Additional Resources" below.
           purpose: `any maskable`,
         },
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#fff`,
         legacy: false,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/allblogs/`],
       },
     },
 
@@ -55,7 +75,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-manifest`,
 
     {
       resolve: `gatsby-plugin-manifest`,
