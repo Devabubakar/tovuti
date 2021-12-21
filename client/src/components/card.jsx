@@ -27,7 +27,7 @@ const CardContainer = ({ blog }) => {
         cursor: 'pointer',
         '&:hover': { color: 'success.main' },
       }}
-      onClick={() => navigate(`/${blog.slug.current}`)}
+      onClick={() => navigate(`/${blog.slug.current}/`)}
     >
       <CardActionArea>
         <StyledImage

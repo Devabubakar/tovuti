@@ -31,12 +31,31 @@ module.exports = {
         watchMode: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Tovuti by Abubakar`,
+        short_name: `Tovuti`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icons: `src/images/gatsby-icon.png`,
+        icon_options: {
+          // For all the options available,
+          // please see the section "Additional Resources" below.
+          purpose: `any maskable`,
+        },
+        legacy: false,
+      },
+    },
 
     `gatsby-remark-images`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-manifest`,
 
     {
       resolve: `gatsby-plugin-manifest`,

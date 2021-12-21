@@ -29,7 +29,7 @@ const Hero = ({ blogs }) => {
     return null;
   }
 
-  console.log(blogs);
+
 
   const blog = blogs[0].node;
 
