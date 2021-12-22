@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-sanity-blog-slug-current-js",
-    "path": "/{SanityBlog.slug__current}/",
-    "result": {"pageContext":{"id":"-1adb2770-e3d2-566d-bfff-d458402430be","__params":{"slug__current":"{SanityBlog.slug__current}"}}},
-    "staticQueryHashes": []}

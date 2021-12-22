@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-episodes-sanity-episode-slug-current-js",
-    "path": "/episodes/marketing-automation-with-customer-io-next-js/",
-    "result": {"data":{"sanityEpisode":{"slug":{"current":"marketing-automation-with-customer-io-next-js"},"youtubeID":null,"title":"Marketing Automation With Customer.io + Next.js","date":"in 24 days","description":"Joel hooks has been building full-featured marketing automation using Nextjs & Customer.io for some of the most popular dev education sites out there. In this episode, he'll share how it's done!","image":{"asset":null}}},"pageContext":{"id":"-b45a2beb-5333-50f1-a639-b095a3bd0e79","slug__current":"marketing-automation-with-customer-io-next-js","__params":{"slug__current":"marketing-automation-with-customer-io-next-js"}}},
-    "staticQueryHashes": ["2326376460","63159454"]}

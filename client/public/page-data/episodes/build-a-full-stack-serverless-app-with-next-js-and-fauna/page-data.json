@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-episodes-sanity-episode-slug-current-js",
-    "path": "/episodes/build-a-full-stack-serverless-app-with-next-js-and-fauna/",
-    "result": {"data":{"sanityEpisode":{"slug":{"current":"build-a-full-stack-serverless-app-with-next-js-and-fauna"},"youtubeID":null,"title":"Build a Full-Stack Serverless App With Next.js & Fauna","date":"in 10 days","description":"Web devs have more power than ever to build ambitious full-stack apps. In this episode, Shadid Haque will teach us how to build a TikTok clone with Netlify Functions, Fauna, and Next.js!","image":{"asset":null}}},"pageContext":{"id":"-2d727af4-5348-5076-91f2-3aad10cf1c42","slug__current":"build-a-full-stack-serverless-app-with-next-js-and-fauna","__params":{"slug__current":"build-a-full-stack-serverless-app-with-next-js-and-fauna"}}},
-    "staticQueryHashes": ["2326376460","63159454"]}

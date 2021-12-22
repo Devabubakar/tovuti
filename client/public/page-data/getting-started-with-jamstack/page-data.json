@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-sanity-blog-slug-current-js",
-    "path": "/getting-started-with-jamstack/",
-    "result": {"data":{"sanityBlog":null},"pageContext":{"id":"-8566529f-1a93-5333-b644-d3538c505335","slug__current":"getting-started-with-jamstack","__params":{"slug__current":"getting-started-with-jamstack"}}},
-    "staticQueryHashes": ["2326376460","63159454","853185734"]}

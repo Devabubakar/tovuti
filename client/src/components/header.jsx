@@ -7,13 +7,11 @@ import Box from '@mui/material/Box';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import Typography from '@mui/material/Typography';
 
-
 import Button from '@mui/material/Button';
 import { StyledLink } from './reusableStyles';
 import { useLocation } from '@reach/router';
 import { Link } from 'gatsby';
-
-
+import LogoSmall from '../images/logo512.svg';
 
 const Header = ({ siteTitle }) => {
   const location = useLocation();

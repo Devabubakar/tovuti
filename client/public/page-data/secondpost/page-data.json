@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-blogs-js",
-    "path": "/secondpost/",
-    "result": {"data":{"markdownRemark":{"html":"<h3>Testing</h3>\n<p>Bismillahi Rahmani Rahim</p>\n<h2>Inshallah</h2>\n<p>ALlah is the Best</p>","frontmatter":{"title":"second Blog"}}},"pageContext":{"slug":"/secondpost/"}},
-    "staticQueryHashes": ["2326376460"]}
