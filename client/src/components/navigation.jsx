@@ -61,7 +61,7 @@ const Navigation = () => {
           >
             <Typography
               variant='p'
-              color='gray'
+              color='grey'
               key={index}
               sx={{
                 cursor: 'pointer',

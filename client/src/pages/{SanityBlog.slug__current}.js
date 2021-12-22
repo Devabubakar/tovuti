@@ -40,9 +40,9 @@ const SanityBlog = ({ data }) => {
             </Grid>
             <Grid item sm={4} sx={{ textAlign: 'start' }}>
               <Typography sx={{ fontSize: '16px' }}>
-                {blog?.author.name} 
+                {blog?.author.name}
               </Typography>
-              <Typography sx={{ fontSize: '14px', color: 'gray' }}>
+              <Typography sx={{ fontSize: '14px', color: 'grey' }}>
                 {blog?.date}
               </Typography>
             </Grid>

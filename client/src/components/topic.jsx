@@ -8,7 +8,15 @@ const TopicHeading = ({ topic }) => {
       <Typography variant='h6' mb={2} sx={{ fontWeight: 600 }}>
         {topic}
       </Typography>
-      <LinearProgress variant='determinate' value={10} color='inherit' />
+      <LinearProgress
+        role='progressbar'
+        aria-valuenow='10'
+        aria-valuemin='0'
+        aria-valuemax='100'
+        variant='determinate'
+        value={10}
+        color='inherit'
+      />
     </Box>
   );
 };

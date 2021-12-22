@@ -39,7 +39,7 @@ const CardContainer = ({ blog }) => {
           <Typography variant='h6' sx={{ fontWeight: '600' }}>
             {blog.title}
           </Typography>
-          <Typography variant='p' my={3} color='gray'>
+          <Typography variant='p' my={3} color='grey'>
             {blog?.description}
           </Typography>
         </CardContent>
@@ -53,7 +53,7 @@ const CardContainer = ({ blog }) => {
             <Typography sx={{ fontSize: '16px' }}>
               {blog?.author.name}
             </Typography>
-            <Typography sx={{ fontSize: '14px', color: 'gray' }}>
+            <Typography sx={{ fontSize: '14px', color: 'grey' }}>
               {blog?.date}
             </Typography>
           </Grid>

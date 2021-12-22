@@ -29,8 +29,6 @@ const Hero = ({ blogs }) => {
     return null;
   }
 
-
-
   const blog = blogs[0].node;
 
   const avatarImage = getImage(blog.author.cover.asset.gatsbyImageData);
@@ -61,7 +59,7 @@ const Hero = ({ blogs }) => {
               {blog?.title}
             </Typography>
           </StyledLink>
-          <Typography variant='p' color='gray' my={2}>
+          <Typography variant='p' color='grey' my={2}>
             {blog?.description}
           </Typography>
           <Grid container spacing={1} mt={1}>
@@ -72,7 +70,7 @@ const Hero = ({ blogs }) => {
               <Typography sx={{ fontSize: '16px' }}>
                 {blog?.author.name}
               </Typography>
-              <Typography sx={{ fontSize: '14px', color: 'gray' }}>
+              <Typography sx={{ fontSize: '14px', color: 'grey' }}>
                 {blog?.date}
               </Typography>
             </Grid>

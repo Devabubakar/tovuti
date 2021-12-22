@@ -14,7 +14,7 @@ const LatestBlogs = ({ blogs }) => {
         return (
           <Grid container my='2em' key={index}>
             <Grid item lg={2}>
-              <Typography variant='h4' color='gray' sx={{ opacity: '.7' }}>
+              <Typography variant='h4' color='grey' sx={{ opacity: '.7' }}>
                 0{index + 1}
               </Typography>
             </Grid>
@@ -34,7 +34,7 @@ const LatestBlogs = ({ blogs }) => {
               <Typography fontSize='16px' mt={1}>
                 {blog.node.author.name} in {blog.node.categories[0].category}
               </Typography>
-              <Typography color='gray' fontSize='16px'>
+              <Typography color='grey' fontSize='16px'>
                 {blog.node.date}
               </Typography>
             </Grid>

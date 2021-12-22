@@ -33,7 +33,7 @@ const Archive = ({ blogs }) => {
                   {blog.node.title}
                 </Typography>
 
-                <Typography my={2} sx={{ color: 'gray' }}>
+                <Typography my={2} sx={{ color: 'grey' }}>
                   {blog.node.description}
                 </Typography>
               </StyledLink>
@@ -50,7 +50,7 @@ const Archive = ({ blogs }) => {
                     {blog.node.author.name} in{' '}
                     {blog.node.categories[0].category}
                   </Typography>
-                  <Typography sx={{ fontSize: '16px', color: 'gray' }}>
+                  <Typography sx={{ fontSize: '16px', color: 'grey' }}>
                     {blog.node.date}
                   </Typography>
                 </Grid>

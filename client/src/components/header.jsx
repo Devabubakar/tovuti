@@ -19,10 +19,11 @@ const Header = ({ siteTitle }) => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar elevation={0} color='inherit' position='static'>
         <Toolbar sx={{ md: { mx: 3 }, mt: 3 }}>
-          <StyledLink to='/'>
+          <StyledLink to='/' aria-current='page'>
             <IconButton
               color='inherit'
               sx={{ outline: 'green 3px solid', mx: 2 }}
+              role='icon button'
             >
               <AutoAwesomeIcon />
             </IconButton>

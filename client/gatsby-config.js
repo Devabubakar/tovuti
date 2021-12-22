@@ -56,24 +56,23 @@ module.exports = {
         background_color: `#0a68f0`,
         theme_color: `#0a68f0`,
         display: `standalone`,
-        icon: `src/images/logosmall.svg`,
+        icon: `src/images/logo512.png`,
         icons: [
           {
-            src: `/images/logo128.svg`,
-            sizes: `192x192`,
-            type: `image/svg`,
+            src: `/images/logo128.png`,
+            sizes: `128x128`,
+            type: `image/png`,
           },
           {
-            src: `/images/gastby-icon.png`,
+            src: `/images/logo512.png`,
             sizes: `512x512`,
             type: `image/png`,
             purpose: 'maskable',
           },
           {
-            src: `/images/logo512.svg`,
+            src: `/images/logo512.png`,
             sizes: `512x512`,
-            type: `image/svg`,
-          
+            type: `image/png`,
           },
         ],
       },
