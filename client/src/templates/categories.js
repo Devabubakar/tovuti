@@ -2,7 +2,6 @@ import { graphql } from 'gatsby';
 import React from 'react';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
-import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import CardContainer from '../components/card';
 import Grid from '@mui/material/Grid';
@@ -13,9 +12,9 @@ export default function Categories({ data }) {
   return (
     <Layout>
       <Seo title={data.sanityCategories.category} />
-      <Container maxWidth='md'>
+      <Box>
         <Typography
-          variant='h4'
+          variant='h5'
           mt={2}
           sx={{ fontWeight: 800, textAlign: 'center' }}
         >
@@ -26,7 +25,7 @@ export default function Categories({ data }) {
             <Typography> Empty for now . come back later</Typography>
           </Box>
         ) : (
-          <Grid container spacing={3} direction='row' mt={2}>
+          <Grid container direction='row' mt={2}>
             {data.sanityCategories.blogs.map((blog, index) => {
               return (
                 <Grid item xs={12} sm={6} key={index}>
@@ -36,7 +35,7 @@ export default function Categories({ data }) {
             })}
           </Grid>
         )}
-      </Container>
+      </Box>
     </Layout>
   );
 }

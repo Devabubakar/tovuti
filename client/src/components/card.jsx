@@ -46,10 +46,10 @@ const CardContainer = ({ blog }) => {
       </CardActionArea>
       <CardActions>
         <Grid container spacing={1} mt={1}>
-          <Grid item xs={2}>
+          <Grid item sm={2}>
             <StyledAvator alt='author avator' image={avatarImage} />
           </Grid>
-          <Grid item xs={10}>
+          <Grid item sm={10}>
             <Typography sx={{ fontSize: '16px' }}>
               {blog?.author.name}
             </Typography>

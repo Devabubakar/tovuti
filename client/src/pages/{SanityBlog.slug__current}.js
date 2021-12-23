@@ -2,7 +2,6 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
-import Container from '@mui/material/Container';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import Typography from '@mui/material/Typography';
 
@@ -13,8 +12,8 @@ import styled from 'styled-components';
 import Grid from '@mui/material/Grid';
 
 const StyledImage = styled(GatsbyImage)`
-  max-height: 500px;
-  border-radius: 12px;
+  max-height: 400px;
+  border-radius: 6px;
   margin: 0 auto;
 `;
 
@@ -25,20 +24,20 @@ const SanityBlog = ({ data }) => {
     <Layout>
       <Seo title={blog.title} />
 
-      <Container maxWidth='md'>
+      <Box mx={{  md: '10%' }}>
         <StyledImage
           image={blog.image.asset.gatsbyImageData}
           alt='blog image'
         />
         <Box textAlign='center' sx={{ cursor: 'pointer' }}>
-          <Grid container mt={2} my={3}>
-            <Grid item sm={1}>
+          <Grid container my={3}>
+            <Grid item xs={4} sm={1}>
               <StyledAvator
                 alt='author avator'
                 image={blog.author.cover.asset.gatsbyImageData}
               />
             </Grid>
-            <Grid item sm={4} sx={{ textAlign: 'start' }}>
+            <Grid item xs={8} sm={4} sx={{ textAlign: 'start' }}>
               <Typography sx={{ fontSize: '16px' }}>
                 {blog?.author.name}
               </Typography>
@@ -53,7 +52,7 @@ const SanityBlog = ({ data }) => {
         </Box>
 
         <BlockContent blocks={blog._rawContent} />
-      </Container>
+      </Box>
     </Layout>
   );
 };

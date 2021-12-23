@@ -39,7 +39,7 @@ const Navigation = () => {
     overflowX: 'scroll',
     overflowY: 'hidden',
     margin: '1% 2%',
-    padding: '1em',
+    padding: '1.5em .2em',
     background: `${scrolled ? '#fff' : 'transparent'}`,
     zIndex: 1000,
     top: `${scrolled ? '0' : null}`,

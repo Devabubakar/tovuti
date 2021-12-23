@@ -8,7 +8,7 @@ import { StyledLink } from './reusableStyles';
 
 const LatestBlogs = ({ blogs }) => {
   return (
-    <Box mx={3} sx={{ position: 'sticky' }}>
+    <Box sx={{ position: 'sticky', sm: { mx: 3 } }}>
       <TopicHeading topic='Latest  Blogs' />
       {blogs.slice(0, 5).map((blog, index) => {
         return (

@@ -12,13 +12,12 @@ import { StyledLink } from './reusableStyles';
 import { useLocation } from '@reach/router';
 import { Link } from 'gatsby';
 
-
 const Header = ({ siteTitle }) => {
   const location = useLocation();
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box>
       <AppBar elevation={0} color='inherit' position='static'>
-        <Toolbar sx={{ md: { mx: 3 }, mt: 3 }}>
+        <Toolbar sx={{ mt: 3, p: 0 }}>
           <StyledLink to='/' aria-current='page'>
             <IconButton
               color='inherit'
@@ -44,9 +43,7 @@ const Header = ({ siteTitle }) => {
 
           {location.pathname !== '/allblogs' ? (
             <StyledLink to='/allblogs'>
-              <Button color='success' sx={{ mx: 3 }}>
-                All Blogs
-              </Button>
+              <Button color='success'>All Blogs</Button>
             </StyledLink>
           ) : null}
         </Toolbar>
