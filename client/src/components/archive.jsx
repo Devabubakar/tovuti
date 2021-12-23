@@ -14,14 +14,8 @@ const Archive = ({ blogs }) => {
       <TopicHeading topic='Archive Blogs' />
       {blogs.slice(0, 3).map((blog, index) => {
         return (
-          <Box>
-            <Grid
-              container
-              key={index}
-              spacing={3}
-              my={2}
-            
-            >
+          <Box key={index}>
+            <Grid container spacing={3} my={2}>
               <Grid item sm={8}>
                 <StyledLink to={blog.node.slug.current}>
                   <Typography
