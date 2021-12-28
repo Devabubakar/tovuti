@@ -12,6 +12,7 @@
     "@sanity/block-content-to-react": "^3.0.0",
     "babel-plugin-styled-components": "^2.0.2",
     "gatsby": "^4.3.0",
+    "gatsby-plugin-emotion": "^7.4.0",
     "gatsby-plugin-gatsby-cloud": "^4.3.0",
     "gatsby-plugin-image": "^2.3.0",
     "gatsby-plugin-local-search": "^2.0.1",
