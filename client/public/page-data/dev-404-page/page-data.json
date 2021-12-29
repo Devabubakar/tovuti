@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---cache-dev-404-page-js",
     "path": "/dev-404-page/",
-    "result": {"data":{"allSiteFunction":{"nodes":[]},"allSitePage":{"nodes":[{"path":"/404/"},{"path":"/404.html"},{"path":"/allblogs/"},{"path":"/"}]}},"pageContext":{}},
+    "result": {"data":{"allSiteFunction":{"nodes":[]},"allSitePage":{"nodes":[{"path":"/categories/ui-ux-design"},{"path":"/categories/freelancing"},{"path":"/categories/lifestyle"},{"path":"/categories/web-development"},{"path":"/categories/typography"},{"path":"/404/"},{"path":"/404.html"},{"path":"/allblogs/"},{"path":"/"},{"path":"/a-collection-of-20-the-most-interesting-financial-designs-to-inspire-banking-and-fintech/"},{"path":"/latest-ui-ux-design-trends-you-should-know/"},{"path":"/how-the-web-works-a-primer-for-newcomers-to-web-development-or-anyone-really/"},{"path":"/ten-important-facts-that-you-should-know-about-javascript/"},{"path":"/10-innovative-approaches-to-improve-your-ui-ux/"}]}},"pageContext":{}},
     "staticQueryHashes": []}

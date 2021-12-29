@@ -10,34 +10,35 @@ const ThemeProvider = ({ children }) => {
   const currentTheme = getTheme('dark');
   const { color } = currentTheme;
   return (
-    <ThemeContext.Provider value={(theme, toggleTheme)}>
-      <EmotionProvider theme={currentTheme}>
-        <Global
-          styles={css({
-            html: {
-              scrollbarColor:
-                theme === 'dark'
-                  ? `${darkTheme.muted} ${darkTheme.background}`
-                  : 'auto',
-            },
-            body: {
-              backgroundColor: currentTheme.background,
-            },
-          })}
-        />
-        <div
-          style={css({
-            color,
-            zIndex: 1,
-            transition: 'ease-in-out 500ms ',
-            overflow: 'hidden',
-           
-          })}
-        >
-          {children}
-        </div>
-      </EmotionProvider>
-    </ThemeContext.Provider>
+    <EmotionThemeProvider theme={currentTheme}>
+    <Global
+      styles={css({
+        html: {
+          scrollbarColor:
+            theme === 'dark'
+              ? `${darkTheme.muted} ${darkTheme.background}`
+              : 'auto',
+        },
+        body: {
+          // for rubber band effect in Chrome on MacOS
+          // and outside the scaled div with background color
+          backgroundColor: currentTheme.background,
+        },
+      })}
+    />
+   
+    <div
+      css={{
+        color,
+        
+        zIndex: 1,
+        position: 'relative',
+        overflow: 'hidden',
+      }}
+    >
+      {children}
+    </div>
+  </EmotionThemeProvider>
   );
 };
 
